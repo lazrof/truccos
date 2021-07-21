@@ -7,23 +7,18 @@
 get_header(); ?>
 
 <main id="primary" class="site-main">
+	
 		
-	<div class="page-section">
-		<div class="container">
-			<?php if ( have_posts() ) : ?>	
-				<?php while ( have_posts() ) : the_post();?>
-				
-					<h1><?php the_title(); ?></h1>
-					<?php the_content(); ?>
-				<?php endwhile; ?>
+		<?php if ( have_posts() ) : ?>	
+			<?php while ( have_posts() ) : the_post();?>
+			
+				<?php get_template_part('template-parts/content-coming-soon') ?>
 
-			<?php else: ?>
-				<h4>No posts were found.</h4>
-			<?php endif; ?>
-		</div>
-	</div>
+			<?php endwhile; ?>
 
-
+		<?php endif; ?>
+		
+	
 </main><!-- #main -->
 
 

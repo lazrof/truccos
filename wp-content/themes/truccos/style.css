@@ -967,3 +967,13 @@ textarea {
 	margin-right: auto;
 	margin-bottom: 1.5em;
 }
+
+
+@font-face {
+    font-family: 'Antipasto';
+    src: url('fonts/Antipasto.woff2') format('woff2'),
+        url('fonts/Antipasto.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

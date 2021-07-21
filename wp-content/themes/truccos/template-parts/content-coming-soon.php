@@ -16,10 +16,10 @@
             <img src="<?php echo get_template_directory_uri() . '/img/light-4.png' ?>" alt="">
         </div>
         
-        <div class="pictures-girl">
+        <div class="pictures pictures-girl">
             <img src="<?php echo get_template_directory_uri() . '/img/pictures-girl.png' ?>" alt="">
         </div>
-        <div class="pictures-boy">
+        <div class="pictures pictures-boy">
             <img src="<?php echo get_template_directory_uri() . '/img/pictures-boy.png' ?>" alt="">
         </div>
 

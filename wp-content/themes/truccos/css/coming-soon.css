@@ -134,7 +134,7 @@ p.box-text {
 hr.separator {
     border: 1px solid #999999;
     margin: 0 15px;
-    height: 100%;
+    height: 100% !important;
 }
 
 #countdown {
@@ -170,4 +170,59 @@ hr.separator {
     font-style: italic;
     border-bottom: 2px solid #0394ac;
  
+}
+
+@media (max-width: 991px) {
+    .light {
+        display: none;
+    }
+
+    .pictures {
+        display: none;
+    }
+}
+
+@media (max-width: 525px) {
+    .content {
+        padding-top:50px;
+    }
+
+    #countdown .number span {
+        font-size:34px;
+        width: 50px;
+    }
+
+    #countdown .number {
+        margin: 0 5px;
+        padding: 5px;
+        width: 100px;
+    }
+
+     #countdown .number p {
+         font-size:14px;
+     }
+
+    #countdown p.colon {
+        right: -12px;
+        font-size:25px;
+    }
+
+    #countdown {
+        width: 100vw;
+    }
+
+    p.box-text {
+        font-size: 16px;
+    }
+
+    .content h4 {
+        text-align:center;
+        font-size: 24px;
+        margin-top:10px;
+    }
+
+    .brands {
+        z-index: 2;
+        width: 250px;
+    }
 }

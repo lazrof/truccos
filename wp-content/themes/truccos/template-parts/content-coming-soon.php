@@ -43,6 +43,7 @@
             <h4>Coming Soon</h4>
             <p>Próximamente podrás disfrutar de nuestra</p>
             <p class="box-text">Nueva Colección Otoño-Invierno</p>
+            <p class="mt-3 mb-0">Transmisión de la pasarela</p>
 
             <?php get_template_part('template-parts/components/countdown') ?>
             

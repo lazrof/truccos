@@ -188,7 +188,7 @@ hr.separator {
 }
 
 
-@media (min-width: 525px) and (max-width: 991px) {
+@media (min-width: 525px) and (max-width: 1024px) {
 
     .content {
         padding: 0;
@@ -213,7 +213,7 @@ hr.separator {
 
 @media (max-width: 525px) {
     .content {
-        padding-top:50px;
+        margin: auto;
     }
 
     .content h4 {
@@ -258,6 +258,10 @@ hr.separator {
 
 
 @media (max-width: 375px) {
+
+    .title {
+        margin: 0;
+    }
 
     .content h4 {
 

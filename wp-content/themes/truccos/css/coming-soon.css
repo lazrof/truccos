@@ -187,6 +187,10 @@ hr.separator {
     .pictures {
         display: none;
     }
+
+    .brands {
+        z-index: 2;
+    }
 }
 
 @media (max-width: 525px) {

@@ -137,6 +137,14 @@ p.box-text {
     align-items: center;
 }
 
+.brand-1 img {
+    width: 250px;
+}
+
+.brand-2 img {
+    width: 250px;
+}
+
 hr.separator {
     border: 1px solid #999999;
     margin: 0 15px;
@@ -179,6 +187,16 @@ hr.separator {
  
 }
 
+
+@media (min-width: 525px) and (max-width: 991px) {
+
+    .content {
+        padding: 0;
+        margin: auto;
+    }
+}
+
+
 @media (max-width: 991px) {
     .light {
         display: none;
@@ -196,6 +214,16 @@ hr.separator {
 @media (max-width: 525px) {
     .content {
         padding-top:50px;
+    }
+
+    .content h4 {
+        text-align:center;
+        font-size: 24px;
+        margin-top:10px;
+    }
+
+    p.box-text {
+        font-size: 16px;
     }
 
     #countdown .number span {
@@ -222,18 +250,25 @@ hr.separator {
         width: 100vw;
     }
 
-    p.box-text {
-        font-size: 16px;
-    }
-
-    .content h4 {
-        text-align:center;
-        font-size: 24px;
-        margin-top:10px;
-    }
-
     .brands {
         z-index: 2;
         width: 250px;
+    }
+}
+
+
+@media (max-width: 375px) {
+
+    .content h4 {
+
+        font-size: 20px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    p.box-text {
+        padding: 3px;
     }
 }

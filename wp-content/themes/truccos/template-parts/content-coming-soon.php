@@ -52,7 +52,7 @@
         
         <div class="brands">
             <div class="brand-1">
-                <img src="<?php echo get_template_directory_uri() . '/img/logo-truccos.png' ?>" alt="">
+                <img src="<?php echo get_template_directory_uri() . '/img/logo-truccos-full.png' ?>" alt="">
             </div>
             <hr class="separator"></hr>
             <div class="brand-2">

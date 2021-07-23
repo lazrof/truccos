@@ -1,6 +1,6 @@
 <?php
 /*
-* Template Name: Landing
+* Template Name: Landing Old
 */
 
 
@@ -9,7 +9,7 @@ get_header(); ?>
 <main id="primary" class="site-main">
 		
 	<div class="page-section">
-		<div class="container p-0">
+		<div class="container">
 			<?php if ( have_posts() ) : ?>	
 				<?php while ( have_posts() ) : the_post();?>
 				

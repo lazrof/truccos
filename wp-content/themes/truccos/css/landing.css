@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .body{
+      width: 100%;
+      height: 100%;
+  }
+  
+  .bloque-medio{
+      width: 100%;
+      height: 100%;
+      margin: 1px;
+      background-color: #163c4a;
+  }
+  
+  #imagen {
+      background-image: url('group-12.jpg');
+      background-size: cover;
+      padding-top: 95px;
+      min-height: 400px;
+  }
+  
+  #logo-2{
+      position: relative;
+      left: 700px;
+      top: -105px;
+  }
+  
+  #logo-1{
+      position: relative;
+      left: 500px;
+      top: 20px;
+  }
+  
+  h1{
+      color: rgb(255, 255, 255);
+      font-family: antipasto;
+      text-align: center;
+      letter-spacing: 2.3;
+  }
+  .ul-1{
+      font-family: Montserrat;
+      font-size: 16px;
+      text-align: center;
+      color: #ffffff;
+      padding-top: 30px;
+      padding-right: 200px;
+      padding-bottom: 30px;
+      padding-left: 200px;
+  }
+  
+  .video-imagen{
+      /* background-image: url('bitmap.jpg'); */
+      background-size: cover;
+      width: 1200px;
+      height: 500px;
+      border-radius: 18px;
+      border: solid 3px #96e7ff;
+      position: relative;
+      left: 70px;
+  }
+  
+  .video-icon{
+      /* background-image: url('group-3.png');  */
+      width: 129px;
+      height: 129px;  
+      position: relative;
+      top: -300px;
+      left: 600px;
+  
+  }
+  
+  .texto-1{
+      position: relative;
+      bottom: -30px;
+  }
+  
+  .barra{
+      width: 1px;
+    height: 78px;
+    border: solid 1px #979797;
+    position: relative;
+    top: -46px;
+    left: 655px;
+  
+  }
+  
+  .navbar{
+      height: 80px;
+  }
+  
+  .bloque-blanco{
+      width: 1348px;
+      height: 800px;
+      background-color: #ffffff;
+  }
+  
+  #logo-abajo-1{
+      position: relative;
+      left: 500px;
+  }
+  
+  #logo-abajo-2{
+      position: relative;
+      left: 600px;
+      top: -8px;
+  }
+  
+  .ultimo-bloque{
+      width: 1348px;
+      height: 600px;
+      margin: 1px;
+      background-color: #163c4a;
+  }
+  
+  .texto-2{
+      position: relative;
+      bottom: -30px;
+      color: black;
+  }
+  
+  .ul-2{
+      font-family: Montserrat;
+      font-size: 16px;
+      text-align: center;
+      color: black;
+      padding-top: 30px;
+      padding-right: 200px;
+      padding-bottom: 30px;
+      padding-left: 200px;
+  }
+  
+  .mayorista{
+      border-radius: 18px;
+      border: solid 3px #96e7ff;
+      background-color: #ffffff;
+      width: 395px;
+      height: 80px;
+      font-family: Montserrat;
+      font-size: 25px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #163c4a;
+      position: absolute;
+      bottom: -1900px;
+      left: 480px;
+      margin: 30px;
+  }
+  
+  #texto-mayorista{
+      font-family: Montserrat;
+      font-size: 40px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: center;
+      color: #ffffff;
+      position: relative;
+      top: 180px;
+      left: 20px;
+      margin: 30px;
+  }
+  
+  .imagen-hojas-1{
+      /* background-image: url('hoja-4.png');  */
+      width: 425px;
+      height: 350px;
+      position: absolute;
+      top: 2462px;
+      left: 934px;  
+  }
+  
+  .imagen-hojas-2{
+      /* background-image: url('hojas-1.png');  */
+      width: 360px;
+      height: 400px;
+      position: absolute;
+      top: 2350px;
+      
+  }
+  
+  .imagen-hojas-4{
+      /* background-image: url('hojas-2.png');  */
+      width: 210px;
+      height: 230px;
+      position: absolute;
+      top: 2145px;
+      transform: scaleX(-1);
+  }
+  
+  .imagen-hojas-3{
+      /* background-image: url('hoja-3.png');  */
+      width: 300px;
+      height: 280px;
+      position: absolute;
+      top: 2145px;
+      left: 1050px;    
+  }
+  
+  .slider{
+    width: 100%;
+  }
+  .carousel{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 30px;
+  }
+  .carousel .card{
+      height: 400px;
+      width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    transition: width .3s, height .3s, margin .3s;
+  }
+  .carousel .card-1{
+      background-image: url('look-33.jpg'); 
+      transition: width .3s, height .3s, margin .3s;
+  }
+  .carousel .card-2{
+      background-image: url('look-33.jpg'); 
+      transition: width .3s, height .3s, margin .3s;
+  }
+  .carousel .card-3{
+      background-image: url('look-33.jpg'); 
+      transition: width .3s, height .3s, margin .3s;
+  }
+  .carousel .card-4{
+      background-image: url('look-33.jpg');
+      transition: width .3s, height .3s, margin .3s;
+  }
+  .carousel .card-5{
+      background-image: url('look-33.jpg'); 
+      transition: width .3s, height .3s, margin .3s;
+  }
+  
+  .card:hover{
+      width: 100%;
+      height: 505px;
+      margin: 0 auto;
+  }
+  
+  .owl-dots{
+    text-align: center;
+    margin-top: 40px;
+  }
+  .owl-dot{
+    height: 15px;
+    width: 45px;
+    margin: 0 5px;
+    outline: none;
+    border-radius: 14px;
+    border: 2px solid #0072bc!important;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+  }
+  .owl-dot.active,
+  .owl-dot:hover{
+    background: #0072bc!important;
+  }
+  

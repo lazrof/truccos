@@ -41,7 +41,7 @@
                 <img src="<?php echo get_template_directory_uri() . '/img/title-memories.png' ?>" alt="">
             </div>
             <h4>Coming Soon</h4>
-            <p>Proximamente podrás disfrutar de nuestra</p>
+            <p>Próximamente podrás disfrutar de nuestra</p>
             <p class="box-text">Nueva Colección Otoño-Invierno</p>
 
             <?php get_template_part('template-parts/components/countdown') ?>

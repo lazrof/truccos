@@ -187,7 +187,7 @@ function my_awesome_theme_statics() {
     
     // Styles
 	wp_enqueue_style('bootstrap', get_theme_file_uri( '/css/bootstrap.css' ));
-	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap', false );
+	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap', false );
    
 	if (is_page_template('template-coming-soon.php')){
     	wp_enqueue_style('coming-soon', get_theme_file_uri( '/css/coming-soon.css' ));

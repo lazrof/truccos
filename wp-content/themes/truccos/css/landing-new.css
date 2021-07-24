@@ -1,13 +1,13 @@
 .brands {
-    display: flex;
+    align-items: flex-end;
     background-color: #fff;
     border-radius: 10px 10px 0 0;
-    padding: 15px;
-    align-items: flex-end;
-    justify-content: center;
-    width: 100%;
+    display: flex;
     height: 80px;
+    justify-content: center;
     margin: 10px 0 0 0;
+    padding: 15px;
+    width: 100%;
 }
 
 hr.separator {
@@ -52,19 +52,19 @@ hr.separator {
 }
 
 .runway-section h2 {
+    font-family: Antipasto;
+    font-size: 45px;
+    letter-spacing: 4px;
     margin: 15px 15px 30px 15px;
     text-align: center;
-    font-family: Antipasto;
-    letter-spacing: 4px;
     text-transform: uppercase;
-    font-size: 45px;
 }
 
 .runway-section p {
     font-family: Montserrat;
     font-weight: 300;
-    text-align: center;
     margin: 35px 35px 45px;
+    text-align: center;
 }
 
 .gallery-section {
@@ -74,12 +74,12 @@ hr.separator {
 }
 
 .gallery-section h2 {
+    font-family: Antipasto;
+    font-size: 45px;
+    letter-spacing: 4px;
     margin: 15px 15px 30px 15px;
     text-align: center;
-    font-family: Antipasto;
-    letter-spacing: 4px;
     text-transform: uppercase;
-    font-size: 45px;
 }
 
 .gallery-section p {
@@ -89,3 +89,171 @@ hr.separator {
     margin: 35px 35px 45px;
 }
 
+.gallery-section .item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    height: 256px;
+    transition: all .2s ease-in-out;
+    width: 256px;
+
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.gallery-section .owl-item:hover .item {
+    width: 298px;
+    height: 353px;
+    margin: -50px 0;
+}
+
+.gallery-section .share {
+    border-radius: 0  0 15px 15px;
+    padding: 5px 6px;
+    text-align: end;
+    width: 100%;
+}
+
+.gallery-section .owl-item:hover .share {
+    background-color: #00000026;
+
+}
+
+.gallery-section .extra-share {
+    height: 0;
+    opacity: 0;
+    transition: all .1s ease-in-out;
+    pointer-events:none;
+}
+
+.gallery-section .owl-item:hover .extra-share {
+    pointer-events:all;
+    height: 100%;
+    opacity: 1;
+}
+
+.gallery-section .share-icons {
+    transition: all .1s ease-in-out;
+    height: 0;
+}
+
+.gallery-section .owl-item:hover  .share-icons {
+    height: 100%;
+}
+
+.gallery-section .item hr {
+    color: #fff;
+    height: 1px;
+    margin: 5px 2px;
+    opacity: 1;
+}
+
+/*Owl Nav buttons*/
+.owl-prev, .owl-next {
+    border:0px solid black;
+    display: block !important;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+}
+.owl-prev { left: -34px; }
+.owl-next { right: -34px; }
+
+.owl-stage {
+    padding: 50px 0;
+}
+
+.owl-item {
+    display: flex;
+    justify-content: center;
+}
+
+.owl-item.active {
+    margin: auto;
+}
+
+
+.wholesalers {
+    background-color: #163c4a;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 100px 20px;
+    position: relative;
+    text-align: center;
+}
+
+
+.wholesalers .plant img {
+    width: 200px;
+}
+
+.wholesalers .plant-1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.wholesalers .plant-2 {
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+
+.wholesalers .plant-3 {
+    right: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.wholesalers .plant-4 {
+    left: 0;
+    position: absolute;
+    bottom: 0;
+}
+
+.wholesalers .content {
+    margin: 30px 0;
+}
+
+.wholesalers button {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 3px solid #96e7ff;
+    box-shadow: -1px 0 12px 2px #96e7ff52;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    font-weight: bold;
+    margin: 25px auto 0px;
+    padding: 13px 25px;
+    text-transform: uppercase;
+    transition: all .2s ease-in-out;
+}
+
+.wholesalers button:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 991px) {
+    .gallery-section {
+        padding: 30px;
+    }
+
+}
+
+@media (max-width: 375px) {
+
+    .gallery-section {
+        padding: 10px;
+    }
+}

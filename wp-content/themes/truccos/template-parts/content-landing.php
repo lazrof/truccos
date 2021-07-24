@@ -41,5 +41,36 @@
             
         </div>
     </div>
+    <div class="col-12">
+        <div class="wholesalers" style="background-image: url(<?php echo get_template_directory_uri() . '/img/bg-blue-wall.png' ?>);">
+            <div class="plant plant-1">
+                <img src="<?php echo get_template_directory_uri() . '/img/plant-1.png' ?>" alt="" srcset="">
+            </div>
+            <div class="plant plant-2">
+                <img src="<?php echo get_template_directory_uri() . '/img/plant-2.png' ?>" alt="" srcset="">
+            </div>
+            <div class="plant plant-3">
+                <img src="<?php echo get_template_directory_uri() . '/img/plant-3.png' ?>" alt="" srcset="">
+            </div>
+            <div class="plant plant-4">
+                <img src="<?php echo get_template_directory_uri() . '/img/plant-4-cam.png' ?>" alt="" srcset="">
+            </div>
+            <div class="content">
+                <h2>¿Te gustaría ser mayorista truccos?</h2>
+                <button>¡Inscríbete ahora!</button>
+            </div>
+        </div>
+    </div>
+    <div class="col-12">
+        <div class="brands">
+            <div class="brand-1">
+                <img src="<?php echo get_template_directory_uri() . '/img/logo-truccos.png' ?>" alt="Truccos">
+            </div>
+            <hr class="separator"></hr>
+            <div class="brand-2">
+                <img src="<?php echo get_template_directory_uri() . '/img/logo-rappaz.png' ?>" alt="Rappaz">
+            </div>
+        </div>
+    </div>
 
 </div>

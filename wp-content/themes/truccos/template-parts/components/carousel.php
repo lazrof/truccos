@@ -1,26 +1,44 @@
 <?php 
 $left_chevron_url = get_template_directory_uri() . '/img/chevron-left.svg';
 $right_chevron_url = get_template_directory_uri() . '/img/chevron-right.svg';
+
+$args = array('posts_per_page' => -1);
+$my_query = new WP_Query( $args );
+
 ?>
-<div class="carousel owl-carousel">
-    
-    <?php for ($i = 1; $i <= 5; $i++): ?>
-        <div class="item" style="background-image: url(<?php echo get_template_directory_uri() . "/img/campaign-pic-$i.jpg" ?>);">
-            <!-- <img src="<?php echo get_template_directory_uri() . "/img/campaign-pic-$i.jpg" ?>" alt=""> -->
-            <div class="share">
-                <a href="#"><?php get_template_part('template-parts/icons/share-icon') ?></a>
-                <div class="extra-share">
-                    <hr>
-                    <div class="share-icons">
-                        <a href="#"><?php get_template_part('template-parts/icons/fb-icon') ?></a>
-                        <a href="#"><?php get_template_part('template-parts/icons/insta-icon') ?></a>
+
+<?php if ( $my_query->have_posts() ): ?>
+    <div class="carousel owl-carousel">
+        
+        <?php while ( $my_query->have_posts() ): $my_query->the_post(); ?>
+            <?php
+                $id = get_the_ID();
+                $post_url = get_permalink($id);
+                $featured_img_url = get_the_post_thumbnail_url($id,'full');
+                if (empty($featured_img_url)){
+                    continue;
+                }  
+            ?>
+            
+            <div class="item" style="background-image: url(<?php echo $featured_img_url ?>);">
+                <!-- <img src="<?php echo $featured_img_url ?>" alt=""> -->
+                <div class="share">
+                    <a href="<?php echo $post_url ?>" target="_blank"><?php get_template_part('template-parts/icons/share-icon') ?></a>
+                    <div class="extra-share">
+                        <hr>
+                        <div class="share-icons">
+                            <a href="#"><?php get_template_part('template-parts/icons/fb-icon') ?></a>
+                            <a href="#"><?php get_template_part('template-parts/icons/insta-icon') ?></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    <?php endfor; ?>
+        <?php endwhile; ?>
 
-</div>
+    </div>
+<?php endif; ?>
+<?php wp_reset_postdata(); ?>
+
 
 <script>
 jQuery( document ).ready(function() {

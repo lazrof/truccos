@@ -8,7 +8,7 @@ get_header();
 date_default_timezone_set('America/Bogota');
 
 $now = date("y-m-d");
-$target = "21-07-26";
+$target = get_field('runway_date');;
 
 // date into dateTimestamp
 $now_date = strtotime($now);

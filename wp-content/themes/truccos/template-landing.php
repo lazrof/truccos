@@ -6,7 +6,7 @@
 
 get_header(); ?>
 
-<main id="primary" class="site-main">
+<main id="primary">
 		
 	<div class="page-section">
 		<div class="container p-0">

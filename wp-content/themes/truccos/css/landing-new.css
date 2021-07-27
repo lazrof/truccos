@@ -1,4 +1,4 @@
-.brands {
+.landing .brands{
     align-items: flex-end;
     background-color: #fff;
     border-radius: 10px 10px 0 0;
@@ -10,18 +10,18 @@
     width: 100%;
 }
 
-hr.separator {
+.landing hr.separator {
     border: 1px solid #999999;
     margin: 0 15px;
     height: 125% !important;
 }
 
-.brand-1 img {
+.landing .brand-1 img {
     height: 30px;
     margin-bottom: 5px;
 }
 
-.brand-2 img {
+.landing .brand-2 img {
     height: 40px;
     margin-bottom: 5px;
 }

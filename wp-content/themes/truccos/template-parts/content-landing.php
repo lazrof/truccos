@@ -20,7 +20,7 @@ if( $link ){
 ?>
 
 <div class="page-section">
-    <div class="container p-0">
+    <div class="container-fluid p-0">
         
         <div class="row">
             <div class="col-12">

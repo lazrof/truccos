@@ -5,14 +5,17 @@
 
 
 get_header(); 
-date_default_timezone_set('America/Bogota');
 
-$now = date("y-m-d");
-$target = get_field('runway_date');;
+//date_default_timezone_set('America/Bogota');
+//$now = date("Y-m-d H:i:s");
+$now = current_time('Y-m-d H:i:s');
+
+$target_d = get_field('runway_date');;
+$target_time = get_field('runway_date_copy');
 
 // date into dateTimestamp
 $now_date = strtotime($now);
-$target_date = strtotime($target);
+$target_date = strtotime($target . ' ' . $target_time);
 
 ?>
 

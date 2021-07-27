@@ -73,7 +73,7 @@ function initializeClock(id, endtime) {
 }
 
 //const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-const deadline = new Date('July 27 2021 00:00:00 GMT-0500')
+const deadline = new Date('July 27 2021 17:30:00 GMT-0500')
 initializeClock('countdown', deadline);
 
 

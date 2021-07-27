@@ -39,6 +39,8 @@ function getTimeRemaining(endtime) {
 }
 
 function initializeClock(id, endtime) {
+  let timeinterval;
+
   const clock = document.getElementById(id);
   const daysSpan = clock.querySelector('.days');
   const hoursSpan = clock.querySelector('.hours');
@@ -54,16 +56,25 @@ function initializeClock(id, endtime) {
     secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
 
     if (t.total <= 0) {
+      
       clearInterval(timeinterval);
+
+      if (localStorage.getItem('countdownFinish') != '1') {
+        localStorage.setItem('countdownFinish', '1');
+        location.reload();
+      }
+
     }
+
   }
 
   updateClock();
-  const timeinterval = setInterval(updateClock, 1000);
+  timeinterval = setInterval(updateClock, 1000);
 }
 
 //const deadline = new Date(Date.parse(new Date()) + 15 * 24 * 60 * 60 * 1000);
-const deadline = new Date('July 27 2021 17:00:00 GMT-0500')
+const deadline = new Date('July 27 2021 00:00:00 GMT-0500')
 initializeClock('countdown', deadline);
+
 
 </script>

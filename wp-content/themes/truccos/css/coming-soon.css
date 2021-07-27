@@ -7,7 +7,11 @@ body {
     height: 100%;
 }
 
-.page-section {
+main.site-main {
+    height: 100%;
+}
+
+.site-main .page-section {
     width: 100%;
     height: 100%;
     background-color: #173c4a;
@@ -18,88 +22,88 @@ body {
     flex-direction: column;
 }
 
-.pictures-girl {
+.site-main .pictures-girl {
     position: absolute;
     left: 10%;
     top: 24%;
 }
 
-.pictures-girl img {
+.site-main .pictures-girl img {
     width: 300px;
 }
 
-.pictures-boy {
+.site-main .pictures-boy {
     position: absolute;
     right: 9%;
     top: 21%;
 }
 
-.pictures-boy img {
+.site-main .pictures-boy img {
     width: 335px;
 }
 
 
-.light {
+.site-main .light {
     position: absolute;
 }
 
-.light.light-1 {
+.site-main .light.light-1 {
     left: 5%;
 }
 
-.light.light-2 {
+.site-main .light.light-2 {
     left: 23%;
     top: -9%;
 }
 
-.light.light-3 {
+.site-main .light.light-3 {
     left: 69%;
 }
 
 
-.light.light-4 {
+.site-main .light.light-4 {
     left: 85%;
 }
 
 
-.plant img {
+.site-main .plant img {
     width: 200px;
 }
 
-.plant-1 {
+.site-main .plant-1 {
     position: absolute;
     left: 0;
     top: 0;
     z-index: 1;
 }
 
-.plant-2 {
+.site-main .plant-2 {
     right: 0;
     position: absolute;
     top: 0;
 }
 
-.plant-3 {
+.site-main .plant-3 {
     right: 0;
     position: absolute;
     bottom: 0;
 }
 
-.plant-4 {
+.site-main .plant-4 {
     left: 0;
     position: absolute;
     bottom: 0;
 }
 
-.title {
+.site-main .title {
     margin: 50px 0 20px 0;
 }
 
-.title img {
+.site-main .title img {
     width: 360px;
 }
 
-.content {
+.site-main .content {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -109,16 +113,16 @@ body {
     z-index: 2;
 }
 
-.content h4 {
+.site-main .content h4 {
     font-size: 28px;
 }
 
-.content p {
+.site-main .content p {
     font-size: 18px;
     margin-bottom:8px;
 }
 
-p.box-text {
+.site-main p.box-text {
     color: #183c4a;
     background-color: #fff;
     text-transform: uppercase;
@@ -128,7 +132,7 @@ p.box-text {
 }
 
 
-.brands {
+.site-main .brands {
     display: flex;
     background-color: #fff;
     border-radius: 10px 10px 0 0;
@@ -137,27 +141,27 @@ p.box-text {
     align-items: center;
 }
 
-.brand-1 img {
+.site-main .brand-1 img {
     width: 250px;
 }
 
-.brand-2 img {
+.site-main .brand-2 img {
     width: 250px;
 }
 
-hr.separator {
+.site-main hr.separator {
     border: 1px solid #999999;
     margin: 0 15px;
     height: 100% !important;
 }
 
-#countdown {
+.site-main #countdown {
     display: flex;
     justify-content: center;
     width: 500px;
 }
 
-#countdown .number {
+.site-main #countdown .number {
     margin: 0 15px;
     padding: 10px;
     text-align: center;
@@ -166,7 +170,7 @@ hr.separator {
     padding-top: 0;
 }
 
-#countdown p.colon {
+.site-main #countdown p.colon {
     margin: 0 !important;
     width: 20px;
     height: 20px;
@@ -178,7 +182,7 @@ hr.separator {
     right: -25px;
 }
 
-#countdown .number span {
+.site-main #countdown .number span {
     font-family: 'Antipasto';
     letter-spacing: 7.2px;
     font-size: 64px;
@@ -190,7 +194,7 @@ hr.separator {
 
 @media (min-width: 525px) and (max-width: 1024px) {
 
-    .content {
+    .site-main .content {
         padding: 0;
         margin: auto;
     }
@@ -198,59 +202,59 @@ hr.separator {
 
 
 @media (max-width: 991px) {
-    .light {
+    .site-main .light {
         display: none;
     }
 
-    .pictures {
+    .site-main .pictures {
         display: none;
     }
 
-    .brands {
+    .site-main .brands {
         z-index: 2;
     }
 }
 
 @media (max-width: 525px) {
-    .content {
+    .site-main .content {
         margin: auto;
     }
 
-    .content h4 {
+    .site-main .content h4 {
         text-align:center;
         font-size: 24px;
         margin-top:10px;
     }
 
-    p.box-text {
+    .site-main p.box-text {
         font-size: 16px;
     }
 
-    #countdown .number span {
+    .site-main #countdown .number span {
         font-size:34px;
         width: 50px;
     }
 
-    #countdown .number {
+    .site-main #countdown .number {
         margin: 0 5px;
         padding: 5px;
         width: 100px;
     }
 
-     #countdown .number p {
+     .site-main #countdown .number p {
          font-size:14px;
      }
 
-    #countdown p.colon {
+    .site-main #countdown p.colon {
         right: -12px;
         font-size:25px;
     }
 
-    #countdown {
+    .site-main #countdown {
         width: 100vw;
     }
 
-    .brands {
+    .site-main .brands {
         z-index: 2;
         width: 250px;
     }
@@ -259,20 +263,85 @@ hr.separator {
 
 @media (max-width: 375px) {
 
-    .title {
+    .site-main .title {
         margin: 0;
     }
 
-    .content h4 {
+    .site-main .content h4 {
 
         font-size: 20px;
     }
 
-    .content p {
+    .site-main .content p {
         font-size: 16px;
     }
 
-    p.box-text {
+    .site-main p.box-text {
         padding: 3px;
+    }
+}
+
+
+
+/*Single*/
+
+
+main.site-main.single {
+    height: unset;
+}
+
+main.site-main.single .content {
+    padding: 0;
+}
+
+main.site-main.single .post-thumbnail img {
+    width: 500px;
+    border-radius: 5px;
+}
+
+main.site-main.single .nav-links a {
+    color: #fff;
+    text-decoration:none;
+}
+
+main.site-main.single .nav-links a:hover {
+    text-decoration:underline;
+    text-decoration-color: #0394ac;
+    text-decoration-thickness: 2px;
+}
+
+main.site-main.single .nav-links {
+    width: 100%;
+}
+
+main.site-main.single nav.navigation.post-navigation {
+    width: 475px;
+    margin: 40px;
+}
+
+main.site-main.single h1 {
+    font-family: 'Antipasto';
+    margin: 25px 0;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 42px;
+}
+
+main.site-main.single .page-section {
+    height: unset;
+}
+
+@media (max-width: 525px) {
+    main.site-main.single .post-thumbnail {
+        padding:0 15px;
+    }
+    main.site-main.single .post-thumbnail img {
+        width:100%;
+    }
+
+    main.site-main.single nav.navigation.post-navigation {
+       z-index: 2;
+       width:100%;
+       padding:0 40px;
     }
 }

@@ -20,15 +20,24 @@ $my_query = new WP_Query( $args );
                 }  
             ?>
             
-            <div class="item" style="background-image: url(<?php echo $featured_img_url ?>);">
-                <!-- <img src="<?php echo $featured_img_url ?>" alt=""> -->
+            <div class="item">
+                <img class="owl-lazy" data-src="<?php echo $featured_img_url ?>" src="<?php echo $featured_img_url ?>" alt="">
                 <div class="share">
-                    <a href="<?php echo $post_url ?>" target="_blank"><?php get_template_part('template-parts/icons/share-icon') ?></a>
+                    <a  
+                        class="share-btn" 
+                        href="<?php echo $featured_img_url ?>" 
+                        target="_blank"
+                        data-url="<?php echo $featured_img_url ?>"
+                        data-title="<?php the_title();?>">
+                        <?php get_template_part('template-parts/icons/share-icon') ?>
+                    </a>
                     <div class="extra-share">
                         <hr>
                         <div class="share-icons">
-                            <a href="#"><?php get_template_part('template-parts/icons/fb-icon') ?></a>
-                            <a href="#"><?php get_template_part('template-parts/icons/insta-icon') ?></a>
+                            <a href="https://facebook.com/sharer.php?u=<?php echo $featured_img_url ?>" target="_blank">
+                                <?php get_template_part('template-parts/icons/fb-icon') ?>
+                            </a>
+                            <!-- <a href="#"><?php get_template_part('template-parts/icons/insta-icon') ?></a> -->
                         </div>
                     </div>
                 </div>
@@ -49,6 +58,7 @@ jQuery( document ).ready(function() {
         autoplay: false,
         autoplayTimeout: 2000,
         autoplayHoverPause: true,
+        lazyLoad: true,
         navText: ["<img src='<?php echo $left_chevron_url ?>'>","<img src='<?php echo $right_chevron_url ?>'>"],
         responsive: {
         0:{
@@ -63,6 +73,23 @@ jQuery( document ).ready(function() {
             items:4,
             nav: true
         }
+        }
+    });
+
+    jQuery('.share-btn').on('click', function(event){
+        let target = this;
+        let url = jQuery(target).data('url');
+        let title = jQuery(target).data('title');
+
+        if (navigator.share) {
+            event.preventDefault();
+            
+            navigator.share({
+                title: title,
+                url: url
+            }).then(() => {
+                console.log('Thanks for sharing!');
+            }).catch(console.error);
         }
     });
 

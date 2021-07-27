@@ -1,4 +1,4 @@
-.brands {
+.landing .brands{
     align-items: flex-end;
     background-color: #fff;
     border-radius: 10px 10px 0 0;
@@ -10,18 +10,18 @@
     width: 100%;
 }
 
-hr.separator {
+.landing hr.separator {
     border: 1px solid #999999;
     margin: 0 15px;
     height: 125% !important;
 }
 
-.brand-1 img {
+.landing .brand-1 img {
     height: 30px;
     margin-bottom: 5px;
 }
 
-.brand-2 img {
+.landing .brand-2 img {
     height: 40px;
     margin-bottom: 5px;
 }
@@ -90,12 +90,9 @@ hr.separator {
 }
 
 .gallery-section .item {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     border-radius: 15px;
     height: 256px;
-    transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out !important;
     width: 256px;
 
     align-items: flex-end;
@@ -104,10 +101,25 @@ hr.separator {
     justify-content: flex-end;
 }
 
+.gallery-section .item img {
+    height: 256px;
+    width: 256px;
+    position: absolute;
+    transition: all .2s ease-in-out !important;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
 .gallery-section .owl-item:hover .item {
     width: 298px;
     height: 353px;
     margin: -50px 0;
+}
+
+.gallery-section .owl-item:hover .item img {
+    width: 298px !important;
+    height: 353px;
+    /* margin: -50px 0;*/
 }
 
 .gallery-section .share {
@@ -115,6 +127,7 @@ hr.separator {
     padding: 5px 6px;
     text-align: end;
     width: 100%;
+    z-index: 1;
 }
 
 .gallery-section .owl-item:hover .share {
